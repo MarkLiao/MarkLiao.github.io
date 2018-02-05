@@ -1,0 +1,34 @@
+<md-content class="projectTabContainer">
+    <md-tabs md-selected="selectedTab" md-dynamic-height="">
+      <md-tab id="angularWebTab" ng-click="changeIndex(0)">
+        <md-tab-label>Angular Website</md-tab-label>
+        <md-tab-body>
+          <div ng-include="'./templates/Project/AngularWebsite.html'"></div>
+        </md-tab-body>
+      </md-tab>
+      <md-tab id="workoutProfileTab" ng-click="changeIndex(1)" >
+        <md-tab-label>Workout Profiles</md-tab-label>
+        <md-tab-body>
+           <div class="workoutProfileDiv" ng-include="'./templates/Project/WorkoutProfile.html'"></div>
+        </md-tab-body>
+      </md-tab>
+      <md-tab id="fitnessQuestTab" ng-click="changeIndex(2)">
+        <md-tab-label>Fitness Quest</md-tab-label>
+        <md-tab-body>
+          <div class="fitnessQuestDiv" ng-include="'./templates/Project/FitnessQuest.html'" ng-cloak=""></div>
+        </md-tab-body>
+      </md-tab>
+      <md-tab id="flipNmatchTab" ng-click="changeIndex(3)">
+        <md-tab-label>FlipN' Match</md-tab-label>
+        <md-tab-body>
+          <div class="flipNMatchDiv" ng-include="'./templates/Project/FlipNMatch.html'" ng-cloak=""></div>
+        </md-tab-body>
+      </md-tab>
+      <md-tab id="mathQWhizTab" ng-click="changeIndex(4)">
+        <md-tab-label>Math Qwhiz</md-tab-label>
+        <md-tab-body>
+         <div class="mathQwhizDiv" ng-include="'./templates/Project/MathQWhiz.html'" ng-cloak=""></div>
+        </md-tab-body>
+      </md-tab>
+    </md-tabs>
+</md-content>

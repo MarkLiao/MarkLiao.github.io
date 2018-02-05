@@ -1,0 +1,35 @@
+<md-content class="aboutMeContainer" ng-controller="aboutMeController">
+<div><span class="aboutMeTitle">About Me</span></div>
+<div class="aboutMeParagraph">
+	<section class="summaryInfo">
+	<span>
+		<h4>Summary</h4> 
+		<p>{{summaryContent}} Aspiring software developer trying venture out into the magical world of computer science.</p>
+	</span>
+	</section>
+	<section class="educationInfo">
+		<span>
+		<h4>Education</h4> 
+		<p>University of Waterloo - 2011-2015</p>
+		<p>{{educationContent}} Honors, Bachelors of Computer Science</p>
+		</span>
+	</section>
+	<section class="contactInfo">
+		<span>
+		<h4>Contact Info</h4>
+		<p>{{contactContent}} Please feel free to contact me via the following methods</p>
+		</span>
+		<md-button class="md-fab md-mini contactButtons" aria-label="call">
+			<md-tooltip md-direction="bottom">{{callMe}} Call</md-tooltip>
+  			<ng-md-icon class="iconCenter" icon="phone" style="fill:black" size="16"></ng-md-icon> 
+		</md-button>
+		<md-button class="md-fab md-mini contactButtons" aria-label="email">
+			<md-tooltip md-direction="bottom">{{emailMe}} Email</md-tooltip>
+  			<ng-md-icon class="iconCenter" icon="email" style="fill:black" size="16"></ng-md-icon> 
+		</md-button>
+		<md-button class="md-fab md-mini contactButtons" aria-label="email">
+			<md-tooltip md-direction="bottom">{{linkedIn}} LinkedIn</md-tooltip>
+  			<ng-md-icon class="iconCenter" icon="linkedin" style="fill:black" size="16"></ng-md-icon> 
+		</md-button>
+	</section>
+</div></md-content>
